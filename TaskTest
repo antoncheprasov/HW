@@ -1,0 +1,20 @@
+public class TaskTest {
+    public static void main(String[] args) {
+
+        int[] arr = new int[8];
+        Random random = new Random();
+        for (int i = 0; i < arr.length ; i++) {
+            arr[i] = random.nextInt(10) + 1;
+        }
+
+        System.out.println("Array" + Arrays.toString(arr));
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (i % 2 == 1) {
+                arr[i] = 0;
+            }
+        }
+        System.out.println("Array again: " + Arrays.toString(arr));
+    }
+}
